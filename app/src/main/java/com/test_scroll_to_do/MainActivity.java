@@ -41,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         });
         list.setAdapter(adapter);
         recycler = (RecyclerView) findViewById(R.id.recycler);
-//        LinearLayoutManager manager = new LinearLayoutManager(this);
-        GridLayoutManager manager = new GridLayoutManager(this,3);
+        LinearLayoutManager manager = new LinearLayoutManager(this);
         recycler.setLayoutManager(manager);
         myRecyclerAdapter = new MyRecyclerAdapter(screenWidth);
         myRecyclerAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener() {

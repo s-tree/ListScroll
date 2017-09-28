@@ -23,7 +23,7 @@ public class MyRecyclerAdapter extends MyBaseRecyclerAdapter {
 
 
     @Override
-    public MyBaseRecyclerHolder getContentView(Context context,ViewGroup scrollView) {
+    public MyBaseRecyclerHolder getContentView(Context context,View scrollView) {
         View v = LayoutInflater.from(context).inflate(R.layout.list_item,null,false);
         MyScrollView _scrollView = (MyScrollView) scrollView;
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams
